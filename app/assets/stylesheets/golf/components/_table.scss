@@ -2,9 +2,10 @@
   width: 100%;
   text-align: right;
   &__title {
+    margin-bottom: 0;
+  }
+  &__label {
     text-align: left;
-    h1 {
-      margin-bottom: 0;
-    }
+    padding-bottom: golf-spacing(xs);
   }
 }

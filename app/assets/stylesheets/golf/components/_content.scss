@@ -1,6 +1,24 @@
 .golf-content {
   flex: 1;
+  position: relative;
   background: #fff;
-  border-radius: golf-border(radius);
+  border-top-left-radius: golf-border(radius);
+  border-top-right-radius: golf-border(radius);
   padding: golf-spacing(sm);
+  &__action {
+    position: absolute;
+    border-radius: 40px;
+    text-align: center;
+    color: #fff;
+    bottom: golf-spacing(sm);
+    left: golf-spacing(sm);
+    right: golf-spacing(sm);
+    background: golf-color(primary);
+    padding: golf-spacing(sm);
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+      background: golf-color(primary, 600);
+    }
+  }
 }

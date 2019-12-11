@@ -11,8 +11,8 @@
 <div class="golf-content">
   <table class="golf-table">
     <thead>
-      <tr>
-        <th class="golf-table__title"><h1>Rounds</h1></th>
+      <tr class="golf-table__row">
+        <th class="golf-table__label"><h2 class="golf-table__title">Rounds</h2></th>
         <th>Rating</th>
         <th>Slope</th>
         <th>Score</th>
@@ -21,11 +21,11 @@
 
     <tbody>
       <% @rounds.each do |round| %>
-        <tr>
-          <td class="golf-table__title"><%= link_to round.course, edit_round_path(round) %></td>
+        <tr class="golf-table__row">
+          <td class="golf-table__label"><%= link_to round.course, edit_round_path(round) %></td>
           <td><%= round.rating %></td>
           <td><%= round.slope %></td>
-          <td><%= round.score %></td>
+          <td><strong><%= round.score %></strong></td>
         </tr>
       <% end %>
     </tbody>
@@ -33,7 +33,7 @@
 
   <br>
 
-  <%= link_to new_round_path do %>
-    <i class="fas fa-plus"></i>
+  <%= link_to new_round_path, class: "golf-content__action" do %>
+    <i class="fas fa-plus"></i> Add Round
   <% end %>
 </div>
