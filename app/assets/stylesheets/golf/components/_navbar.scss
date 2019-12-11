@@ -1,0 +1,17 @@
+.golf-navbar {
+  display: flex;
+  &__action {
+    color: #fff;
+  }
+  &__body {
+    flex: 1;
+    text-align: right;
+  }
+  &__user {
+    color: #fff;
+  }
+  &__stat {
+    color: #fff;
+    font-size: golf-font-size(4xl);
+  }
+}

@@ -9,7 +9,7 @@ body {
   text-size-adjust: 100%;
   font-family: 'Inter', sans-serif;
   color: golf-color(gray, 900);
-  font-size: 14px;
+  font-size: golf-font-size(sm);
 }
 @supports (font-variation-settings: normal) {
   body { font-family: 'Inter var', sans-serif; }
@@ -21,6 +21,9 @@ h1,h2,h3,h4,h5,h6,strong,th {
   color: #000;
 }
 a {
-  color: golf-color(primary);
+  color: #000;
   font-weight: 600;
+  &:hover {
+    color: golf-color(primary, 900);
+  }
 }

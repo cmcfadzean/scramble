@@ -1,0 +1,9 @@
+@function golf-border($key: default) {
+  $value: map-get($golf-borders, $key);
+  @return $value;
+}
+
+$golf-borders: (
+  default: 1px solid golf-color(gray, 200),
+  radius: 10px,
+);

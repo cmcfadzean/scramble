@@ -3,3 +3,4 @@
 <%= render 'form', round: @round %>
 
 <%= link_to 'Back', rounds_path %>
+<%= link_to 'Destroy', @round, method: :delete, data: { confirm: 'Are you sure?' } %>

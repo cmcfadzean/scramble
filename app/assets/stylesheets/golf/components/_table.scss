@@ -1,0 +1,10 @@
+.golf-table {
+  width: 100%;
+  text-align: right;
+  &__title {
+    text-align: left;
+    h1 {
+      margin-bottom: 0;
+    }
+  }
+}
