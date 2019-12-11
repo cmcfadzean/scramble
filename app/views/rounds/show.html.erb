@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Course:</strong>
+  <%= @round.course %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @round.rating %>
+</p>
+
+<p>
+  <strong>Slope:</strong>
+  <%= @round.slope %>
+</p>
+
+<p>
+  <strong>Score:</strong>
+  <%= @round.score %>
+</p>
+
+<%= link_to 'Edit', edit_round_path(@round) %> |
+<%= link_to 'Back', rounds_path %>

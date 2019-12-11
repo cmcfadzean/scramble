@@ -1,0 +1,12 @@
+@function golf-spacing($key: md) {
+  $value: map-get($golf-spacings, $key);
+  @return $value;
+}
+
+$golf-spacings: (
+  2xs: 4px,
+  xs: 8px,
+  sm: 16px,
+  md: 24px,
+  lg: 32px
+);

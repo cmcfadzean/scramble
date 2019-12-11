@@ -1,0 +1,26 @@
+@import url('https://rsms.me/inter/inter.css');
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-family: 'Inter', sans-serif;
+  color: golf-color(gray, 900);
+  font-size: 14px;
+}
+@supports (font-variation-settings: normal) {
+  body { font-family: 'Inter var', sans-serif; }
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 900;
+}
+h1,h2,h3,h4,h5,h6,strong,th {
+  color: #000;
+}
+a {
+  color: golf-color(primary);
+  font-weight: 600;
+}

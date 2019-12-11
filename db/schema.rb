@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_07_170655) do
+ActiveRecord::Schema.define(version: 2019_12_07_171138) do
+
+  create_table "rounds", force: :cascade do |t|
+    t.integer "user_id"
+    t.string "course"
+    t.decimal "rating"
+    t.decimal "slope"
+    t.integer "score"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_rounds_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false

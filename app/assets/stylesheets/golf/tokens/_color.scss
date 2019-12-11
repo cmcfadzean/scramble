@@ -1,0 +1,53 @@
+@function golf-color($base, $shade: 500) {
+  $color: map-get(map-get($golf-colors, $base), $shade);
+  @return $color;
+}
+
+$golf-colors: (
+  primary: (
+    100: #EDFDFA,
+    200: #CFF7F3,
+    300: #A8EBE6,
+    400: #6EE2DF,
+    500: #12A5A5,
+    600: #059094,
+    700: #007C80,
+    800: #025B5E,
+    900: #003942,
+  ),
+  warning: (
+    100: #FDF4ED,
+    200: #F8D2B8,
+    300: #F7B28B,
+    400: #F6976A,
+    500: #EF6D39,
+    600: #DF592F,
+    700: #CB4928,
+    800: #A44A19,
+    900: #791E10,
+  ),
+  danger: (
+    100: #FFFAFA,
+    200: #FFE5E5,
+    300: #FCB0A6,
+    400: #FE6C62,
+    500: #F0574D,
+    600: #DA463E,
+    700: #BA2C2D,
+    800: #911D1F,
+    900: #580F18,
+  ),
+  gray: (
+    white: #ffffff,
+    100: #F6F8F9,
+    200: #E4E7EB,
+    300: #CBD2D9,
+    400: #9AA5B1,
+    500: #7B8794,
+    600: #616E7C,
+    700: #54606C,
+    800: #3E4C59,
+    900: #1F2933,
+    black: #000000,
+  )
+);
