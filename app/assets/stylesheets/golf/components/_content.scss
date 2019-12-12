@@ -5,14 +5,18 @@
   border-top-left-radius: golf-border(radius);
   border-top-right-radius: golf-border(radius);
   padding: golf-spacing(sm);
+  padding-bottom: 85px;
   &__action {
-    position: absolute;
-    border-radius: 40px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    position: fixed;
+    border-radius: 50%;
+    width: 56px;
     text-align: center;
     color: #fff;
     bottom: golf-spacing(sm);
-    left: golf-spacing(sm);
-    right: golf-spacing(sm);
+    right: golf-spacing(lg);
     background: golf-color(primary);
     padding: golf-spacing(sm);
     &:hover {

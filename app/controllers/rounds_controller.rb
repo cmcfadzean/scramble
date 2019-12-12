@@ -6,7 +6,11 @@ class RoundsController < ApplicationController
   # GET /rounds.json
   def index
     @rounds = current_user.rounds
-    @handicamp = handicap
+    if @rounds.count > 0
+      @handicamp = handicap
+    else 
+      @handicamp = "--"
+    end
   end
 
   # GET /rounds/1
@@ -17,6 +21,12 @@ class RoundsController < ApplicationController
   # GET /rounds/new
   def new
     @round = current_user.rounds.build
+    @rounds = current_user.rounds
+    if @rounds.count > 0
+      @handicamp = handicap
+    else 
+      @handicamp = "--"
+    end
   end
 
   # GET /rounds/1/edit
