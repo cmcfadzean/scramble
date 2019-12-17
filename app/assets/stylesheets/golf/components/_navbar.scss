@@ -3,15 +3,25 @@
   &__action {
     color: #fff;
   }
+  &__logo {
+    display: block;
+    max-height: 50px;
+    width: auto;
+    margin: golf-spacing(lg) 0;
+  }
   &__body {
     flex: 1;
     text-align: right;
   }
   &__user {
+    display: block;
     color: #fff;
+    margin-bottom: golf-spacing(sm);
   }
   &__stat {
     color: #fff;
     font-size: golf-font-size(6xl);
+    margin: golf-spacing(md) 0;
+    line-height: 1;
   }
 }

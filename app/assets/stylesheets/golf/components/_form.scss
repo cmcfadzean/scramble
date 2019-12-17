@@ -1,0 +1,14 @@
+.golf-form {
+  label {
+    margin-bottom: golf-spacing(xs);
+    font-size: golf-font-size(xs);
+  }
+  input {
+    width: 100%;
+    padding: golf-spacing(sm);
+    border-radius: golf-border(radius);
+    border-width: 0px;
+    background: golf-color(gray,100);
+    margin-bottom: golf-spacing(sm);
+  }
+}

@@ -1,37 +1,9 @@
-<%= form_with(model: round, local: true) do |form| %>
-  <% if round.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(round.errors.count, "error") %> prohibited this round from being saved:</h2>
-
-      <ul>
-      <% round.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
+<div class="golf-form">
+  <%= simple_form_for round do |f| %>
+    <%= f.input :course, required: true %>
+    <%= f.input :rating, required: true %>
+    <%= f.input :slope, required: true %>
+    <%= f.input :score, required: true %>
+    <%= f.button :submit %>
   <% end %>
-
-  <div class="field">
-    <%= form.label :course %>
-    <%= form.text_field :course %>
-  </div>
-
-  <div class="field">
-    <%= form.label :rating %>
-    <%= form.number_field :rating, step: :any %>
-  </div>
-
-  <div class="field">
-    <%= form.label :slope %>
-    <%= form.number_field :slope, step: :any %>
-  </div>
-
-  <div class="field">
-    <%= form.label :score %>
-    <%= form.number_field :score %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit class:"golf-content__action" %>
-  </div>
-<% end %>
+</div>

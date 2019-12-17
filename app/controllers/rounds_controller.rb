@@ -21,12 +21,6 @@ class RoundsController < ApplicationController
   # GET /rounds/new
   def new
     @round = current_user.rounds.build
-    @rounds = current_user.rounds
-    if @rounds.count > 0
-      @handicamp = handicap
-    else 
-      @handicamp = "--"
-    end
   end
 
   # GET /rounds/1/edit

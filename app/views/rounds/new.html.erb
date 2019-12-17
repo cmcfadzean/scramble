@@ -1,10 +1,12 @@
 <div class="golf-navbar">
-  <%= link_to rounds_path, :class => 'golf-navbar__action' do %>
-    <i class="fas fa-arrow-left"></i>
-  <% end %>
+  <div class="golf-navbar__branding">
+    <%= link_to rounds_path, :class => 'golf-navbar__action' do %>
+      <i class="fas fa-arrow-left"></i>
+    <% end %>
+    <%= image_tag("titleist.png", class: "golf-navbar__logo") %>
+  </div>
   <div class="golf-navbar__body">
     <%= link_to current_user.email, edit_user_registration_path, :class => 'golf-navbar__user' %>
-    <h2 class="golf-navbar__stat"><%= @handicamp %></h2>
   </div>
 </div>
 <div class="golf-content">
