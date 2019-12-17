@@ -1,0 +1,23 @@
+<div class="golf-navbar">
+  <div class="golf-navbar__branding">
+    <%= link_to "Sign up", new_registration_path(resource_name), :class => 'golf-navbar__action' %>
+    <%= image_tag("titleist.png", class: "golf-navbar__logo") %>
+  </div>
+</div>
+
+<div class="golf-content">
+  <h2>Log in</h2>
+  <div class="golf-form">
+    <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <%= f.input :email,
+                  required: false,
+                  autofocus: true,
+                  input_html: { autocomplete: "email" } %>
+      <%= f.input :password,
+                  required: false,
+                  input_html: { autocomplete: "current-password" } %>
+      <%= f.button :submit, "Log in" %>
+    <% end %>
+    <%= render "devise/shared/links" %>
+  </div>
+</div>
