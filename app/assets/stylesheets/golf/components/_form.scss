@@ -11,4 +11,12 @@
     background: golf-color(gray,100);
     margin-bottom: golf-spacing(sm);
   }
+  button, [type="button"], [type="reset"], [type="submit"] {
+    background: golf-color(primary);
+    font-weight: 600;
+    color: #fff;
+    &:hover {
+      background: golf-color(primary, 600);
+    }
+  }
 }
