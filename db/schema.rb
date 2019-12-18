@@ -12,8 +12,11 @@
 
 ActiveRecord::Schema.define(version: 2019_12_07_171138) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "rounds", force: :cascade do |t|
-    t.integer "user_id"
+    t.bigint "user_id"
     t.string "course"
     t.decimal "rating"
     t.decimal "slope"
